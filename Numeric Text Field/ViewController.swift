@@ -31,14 +31,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 lastValue = "\(number)"
             }
             textField.text = lastValue
+        } else {
+            textField.text = ""
         }
     }
 
     @objc private func joinChange(_ textField: UITextField) {
         if let num = Int(textField.text!) {
-          textField.text = "\(num)"
+            textField.text = "\(num)"
         } else {
-          textField.text = ""
+            textField.text = ""
         }
     }
 
